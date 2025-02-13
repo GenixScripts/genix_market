@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shop-header">
+            <div class="title">MARKET SHOP</div>
+            <div class="subtitle">BUY</div>
+            <div class="header-buttons">
+                </button>
+                <button id="closeButton" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="product-list">
+                <div class="items-grid" id="itemContainer">
+                </div>
+            </div>
+
+            <div class="shopping-cart">
+                <div class="cart-header">Shopping Cart</div>
+                <div class="cart-items" id="cartContainer">
+                </div>
+                <div class="cart-footer">
+                    <button class="pay-button" onclick="buyItems('cash')">Pay Cash</button>
+                    <button class="pay-button" onclick="buyItems('bank')">Pay Bank</button>
+                    <div class="total-amount" id="totalAmount">$0</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
